@@ -28,4 +28,5 @@ public abstract class Orang {
     public long getId(){
         return id;
     }
+    public abstract void display();
 }
