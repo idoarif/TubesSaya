@@ -26,7 +26,7 @@ public class Anggota extends Orang {
     public void createPeminjaman(Date tanggal, long id) {
         p = new Peminjaman(tanggal, id);
         riwayatPinjaman.add(p);
-        i = this.riwayatPinjaman.size() - 1;
+        i = this.riwayatPinjaman.size()-1;
         riwayatPinjaman.get(i).setStatus("sedang meminjam");
     }
 
