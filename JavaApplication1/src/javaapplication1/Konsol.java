@@ -103,6 +103,9 @@ public class Konsol {
                 daftarAnggota.remove(i);
                 System.out.println("Anggota dengan ID Anggota : "+id+"\nBerhasil Dihapus");
             }
+            else{
+                System.out.println("Data tidak ditemukan");
+            }
         }
     }
 
@@ -204,7 +207,7 @@ public class Konsol {
     public void menuEmpat() {
         System.out.print("ID Anggota : ");
         long id = in.nextLong();
-        deleteAnggota(id);
+        deleteAnggota(id);        
     }
 
     public void menuLima() {
@@ -287,14 +290,14 @@ public class Konsol {
         System.out.println("\n1. Add Petugas ");
         System.out.println("2. Tampil Data Petugas");
         System.out.println("3. Add Anggota");
-        System.out.println("4. Add Barang");
-        System.out.println("5. Add Barang ke Toko");
-        System.out.println("6. Delete Anggota");
-        System.out.println("7. Kembalikan Barang");
-        System.out.println("8. Membuat Laporan Peminjaman");
-        System.out.println("9. Menambahkan Barang Pinjaman");
-        System.out.println("10. Display Riwayat Peminjaman dan Daftar Barang");
-        System.out.println("11. Kembalikan barang Pinjaman");
+        System.out.println("4. Add Barang ke toko");
+        System.out.println("5. Delete anggota");
+        System.out.println("6. Kembalikan Barang");
+        System.out.println("7. Membuat Laporan Peminjaman");
+        System.out.println("8. Menambahkan Barang Pinjaman");
+        System.out.println("9. Display Riwayat Peminjaman dan Daftar Barang");
+        System.out.println("10.Kembalikan barang pinjaman");
+        System.out.println("11.Display barang");
         System.out.println("0. Exit!");
         do {
             System.out.println("===============================");
